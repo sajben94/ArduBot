@@ -1,0 +1,82 @@
+
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+  -webkit-tap-highlight-color: transparent !important;
+  outline:none !important;
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#666;
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    margin:0px;
+    padding:0px;
+
+}
+
+.app{
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul#ulBtList{
+  padding: 0;
+}
+
+
+#ulBtList li{
+  list-style: none;
+  width: 80%;
+  background: #0ad;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+
+
+#btList h2{
+  color: #0ad;
+}
+
+#btControl h1{
+  border: 2px #0ad solid;
+  width: 80%;
+  border-radius: 0 0 10px 10px ;
+  padding: 10px;
+  margin: 50px auto;
+  color: #0ad;
+
+}
+
+
+.btn{
+  font-size: 3em;
+  background:transparent;
+  color: #0ad;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  border: 2px solid #0ad;
+  margin: 5px;
+}
+
+
+#disconnect{
+  width: 80%;
+  font-size: 1.5em;
+  background: #0ad;
+  border: 2px #0ad solid;
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 70px;
+  border-radius: 5px;
+}
