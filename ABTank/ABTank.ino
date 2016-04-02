@@ -34,7 +34,7 @@ void loop() {
       break;
     case 'q':
       analogWrite(m2, 150);digitalWrite(m4, LOW);
-      ;analogWrite(m3, 150)digitalWrite(m1, LOW);
+      analogWrite(m3, 150)digitalWrite(m1, LOW);
       break;
     case 'l':
       analogWrite(m1, 255);digitalWrite(m2, LOW);
