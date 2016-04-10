@@ -1,14 +1,11 @@
 (function ($) {
 
   document.addEventListener("deviceready", onDeviceReady, false);
-  //
-  //
   function onDeviceReady() {
     document.addEventListener("pause", onPause, false);
 		document.addEventListener("resume", onResume, false);
 
     cordova.plugins.BluetoothStatus.initPlugin();
-    // cordova.plugins.BluetoothStatus.promptForBT();
     cordova.plugins.BluetoothStatus.enableBT();
 
     var tmpl = $.templates(' <li><a class="connectBT" href="{{:id}}">{{:name}} | {{:id}}</a></li> ');
@@ -18,6 +15,7 @@
         $('#ulBtList').html(html);
       });
     });
+
     $(document).on('touchstart','.connectBT',function(){
         event.preventDefault();
         var bladr = $(this).attr('href');
@@ -32,7 +30,6 @@
 
 			});
     })
-
 
     $(document).on('touchstart', '#forward', function() {
   		bluetoothSerial.write("f", function(){}, function(){});
@@ -65,23 +62,15 @@
     $(document).on('touchend', '#disconnect', function() {
       bluetoothSerial.disconnect(function () {
         $('#btControl').html("");
-        $('#btList').hide();
+        $('#btList').show();
         alert('Úspešne ste sa odpojili');
         window.location.reload(true);
-
-      }, function () {
-        //code
-      });
-
+      }, function () {});
 	  });
   }
 
-  function onPause(){
-  // code
-  };
+  function onPause(){};
 
-  function onResume(){
-    //code
-  };
+  function onResume(){};
 
 })(jQuery);
